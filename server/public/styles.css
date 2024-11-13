@@ -1,0 +1,154 @@
+header {
+    height: 300px;
+    width: 100%;
+    background-image: url('images/goldengatehd.jpg'); 
+    background-size: cover; 
+    background-position: center 80%; /*W adjusting image*/
+}
+
+header h1 {
+    line-height: 300px;
+    text-align: center;
+    color: yellowgreen;
+    font-size: 50pt;
+    margin: 0px;;
+}
+
+
+nav{
+    display: flex;             
+    justify-content: space-around;
+    align-items: center;
+    background-color: navy;
+    height: 50px;
+}
+
+nav a {
+    height: 50px;
+    color: yellow;     
+    font-size: 22px; 
+    text-align: center;
+    line-height: 50px; /* Match the height of the nav bar for vertical centering */
+}
+
+body  {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #d7f0f2;
+    margin: 0px;
+}
+
+footer {
+    height:30px;
+    color: yellow;
+    background-color: navy;
+    text-align:right;
+}
+
+.home-container{
+    padding: 10px 0;
+    width: 800px;
+    margin: 0 auto;
+    text-align: left;   
+}
+
+.home-pic {
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 75px;
+    text-align: left;
+  }
+  
+  .attraction {
+    display: flex;
+    align-items: left;
+    margin-bottom: 50px;
+    border: 1px solid grey;
+    padding: 10px;
+  }
+  
+  .attraction-img {
+    width: 300px;
+    height: 250px;
+    align-items: left;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .attraction-content h2 {
+    text-align: left;
+    margin: 0;
+    font-size: 30px;
+    color: black;
+  }
+  
+  .attraction-content p {
+    text-align: left;
+    font-size: 20px;
+    color: black;
+  }
+
+  .restaurant-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 50px; 
+    width: 750px; 
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.restaurant-item {
+    text-align: center;
+    background-color: bisque;
+    border: 1px solid grey; 
+}
+
+.restaurant-item img {
+    width: 100%;
+    height: 170px;
+}
+
+.restaurant-card {
+    padding: 0;
+    margin: 0;
+}
+
+.restaurant-img {
+    padding: 0;
+    margin: 0;
+}
+
+
+.restaurant-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.restaurant-address {
+    font-size: 14px;
+    color: #666;
+}
+
+.form-container {
+    width: 400px;
+    margin: 50px auto; /* This will center the form horizontally */
+    padding: 20px;
+}
+
+.form-container h2 {
+    font-size: 20px;
+}
+
+.review-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.review-item {
+    margin-bottom: 1em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1em;
+}

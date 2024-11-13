@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SF Travel Guide | Restaurants</title>
+    <link rel="icon" type="image/png" href="/images/icon.svg">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="restaurant-container">
+        <% if (Array.isArray(restaurantData) && restaurantData.length > 0) { %>
+            <% restaurantData.forEach(restaurant => { %>
+                <div class="restaurant-item" data-id="<%= restaurant.id %>">
+                    <img src="<%= restaurant.photo %>" alt="<%= restaurant.name %>">
+                    <p class="restaurant-name"><%= restaurant.name %></p>
+                    <p class="restaurant-address"><%= restaurant.address %><br><%= restaurant.phone %></p>
+                    <button class="delete-btn">X</button>
+                </div>
+            <% }) %>
+        <% } else { %>
+            <p>No restaurant data available</p>
+        <% } %>
+    </div>
+    <script src="/scripts/header.js"></script>
+    <script src="/scripts/restaurantCards.js"></script>
+</body>
+</html>
+
